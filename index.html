@@ -1,18 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Kokoa Challenge</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
 </head>
 <body>
+    <h1>Create An Account</h1>
 <form>
-    <input type="text"  placeholder="Name" />
-    <input type="text" disabled placeholder="Last Name" />
-    <input type="text" required placeholder="Username" />
-    <input type="password" minlength="8" placeholder="password" />
-    <input type="file" accept=".pdf, image/" />
-    <input type="submit" value="create account">
+    <label for="firstname">First name</label>
+    <input id="firstname" type="text" required placeholder="first name" />
+    <br>
+    <label for="lastname">Last name</label>
+    <input id="lastname" type="text" required placeholder="last name" />
+    <br>
+    <label for="email">Email</label>
+    <input id="email" type="email" required placeholder="email" />
+    <br>
+    <label for="username">Username</label>
+    <input id="username" type="text" required placeholder="username" />
+    <br>
+    <label for="password">Password</label>
+    <input id="password" type="password" required placeholder="password" minlength="10"/>
+    <br>
+    <label for="birthdate">Birthdate</label>
+    <input id="birthdate" type="date" required placeholder="birthdate" />
+    <br>
+    <label for="happy">How happy are you?</label>
+    <input id="happy" type="range" min="0" max="10" step="1" value="5" />
+    <br>
+    <label for="color">What is your fav.color?</label>
+    <input id="color" type="color" required/>
+    <br>
+    <input type="submit" value="Create Account"/>
 </form>
-
 </body>
 </html>
