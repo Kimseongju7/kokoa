@@ -4,35 +4,13 @@
     <title>Kokoa Challenge</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <link href="style.css" rel="stylesheet" />
 </head>
 <body>
-    <h1>Create An Account</h1>
-<form>
-    <label for="firstname">First name</label>
-    <input id="firstname" type="text" required placeholder="first name" />
-    <br>
-    <label for="lastname">Last name</label>
-    <input id="lastname" type="text" required placeholder="last name" />
-    <br>
-    <label for="email">Email</label>
-    <input id="email" type="email" required placeholder="email" />
-    <br>
-    <label for="username">Username</label>
-    <input id="username" type="text" required placeholder="username" />
-    <br>
-    <label for="password">Password</label>
-    <input id="password" type="password" required placeholder="password" minlength="10"/>
-    <br>
-    <label for="birthdate">Birthdate</label>
-    <input id="birthdate" type="date" required placeholder="birthdate" />
-    <br>
-    <label for="happy">How happy are you?</label>
-    <input id="happy" type="range" min="0" max="10" step="1" value="5" />
-    <br>
-    <label for="color">What is your fav.color?</label>
-    <input id="color" type="color" required/>
-    <br>
-    <input type="submit" value="Create Account"/>
-</form>
+<!--block의 특징 3가지 중 하나 margin-->
+margin : block의 border(경계)로부터 바깥쪽으로 나 있는 공간
+margin : 2개는 상하, 좌우를 나타냄
+margin : 4개는 상, 우, 하, 좌를 나타냄. 시계방향
+collapsing margins 현상 : 두 개의 block이 경계가 만날 떼, 두 block의 margin이 겹치는 현상 (상하에서만 발생)
 </body>
 </html>
