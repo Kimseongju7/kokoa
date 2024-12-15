@@ -1,104 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Kokoa Challenge</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kokoa Clone</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<section class="phone">
-    <header>
-        <i class="fas fa-arrow-left"></i>
-        <i class="fas fa-search"></i>
-    </header>
-    <div class="artist">
-        <img
-                src="https://static.billboard.com/files/media/Tyler-The-Creator-press-by-Sam-Rock-2019-billboard-1548-1024x677.jpg"
-        />
-        <h2>Tyler, The Creator</h2>
-        <h6>Rap, Hip-Hop</h6>
+<header class="header">
+    <div class="container">
+        <h1 class="logo">Kokoa Clone</h1>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </div>
-    <div class="btns">
-        <span class="btns__btn">Shuffle</span>
-        <span class="btns__btn"><i class="fas fa-heart"></i> 227</span>
+</header>
+
+<section id="about" class="about-section">
+    <div class="container">
+        <h2>About Kokoa</h2>
+        <p>Kokoa is a minimalist messaging platform designed for seamless communication and ease of use.</p>
+        <button class="learn-more-btn">Learn More</button>
     </div>
-    <ul class="songs">
-        <li class="songs__song">
-            <div class="songs__data">
-                <img
-                        src="https://imgix.ranker.com/user_node_img/50092/1001832784/original/flower-boy-photo-u1?w=650&q=50&fm=pjpg&fit=crop&crop=faces"
-                />
-                <div>
-                    <span class="songs__author"> Tyler, The Creator </span>
-                    <span class="songs__title">911</span>
-                </div>
-            </div>
-            <i class="fas fa-ellipsis-v"></i>
-        </li>
-        <li class="songs__song">
-            <div class="songs__data">
-                <img
-                        src="https://imgix.ranker.com/user_node_img/50092/1001832784/original/flower-boy-photo-u1?w=650&q=50&fm=pjpg&fit=crop&crop=faces"
-                />
-                <div>
-                    <span class="songs__author"> Tyler, The Creator </span>
-                    <span class="songs__title">911</span>
-                </div>
-            </div>
-            <i class="fas fa-ellipsis-v"></i>
-        </li>
-    </ul>
-    <div class="currently-playing">
-        <div>
-            <span class="current__author">Tyler, The Creator</span>
-            <span class="current__song">November</span>
-        </div>
-        <div class="current__player">
-            <i class="fas fa-step-backward"></i>
-            <i class="fas fa-pause fa-2x"></i>
-            <i class="fas fa-step-forward"></i>
+</section>
+
+<section id="features" class="features-section">
+    <div class="container">
+        <h2>Features</h2>
+        <div class="feature-grid">
+            <div class="feature-item">Fast Messaging</div>
+            <div class="feature-item">Secure Chats</div>
+            <div class="feature-item">Custom Themes</div>
+            <div class="feature-item">Multi-Device Support</div>
         </div>
     </div>
 </section>
-<section class="phone">
-    <header>
-        <i class="fas fa-arrow-left"></i>
-        <i class="fas fa-ellipsis-v"></i>
-    </header>
-    <div class="cover">
-        <img
-                src="https://imgix.ranker.com/user_node_img/50092/1001832784/original/flower-boy-photo-u1?w=650&q=50&fm=pjpg&fit=crop&crop=faces"
-        />
-    </div>
-    <div class="player">
-        <h4>November</h4>
-        <h5>Tyler, The Creator</h5>
-    </div>
-    <div class="progress">
-        <div class="progress__time">
-            <span>1:56</span>
-            <span>2:21</span>
-        </div>
-        <div class="progress__bar">
-            <div class="progress__played"></div>
-            <div class="progress__marker"></div>
-            <div class="progress__total"></div>
-        </div>
-    </div>
-    <div class="actions">
-        <i class="fas fa-redo"></i>
-        <i class="fas fa-step-backward fa-lg"></i>
-        <span>
-          <i class="fas fa-play fa-lg"></i>
-        </span>
-        <i class="fas fa-step-forward fa-lg"></i>
-        <i class="fas fa-random"></i>
+
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
     </div>
 </section>
-<script
-        src="https://kit.fontawesome.com/b5ac015c11.js"
-        crossorigin="anonymous"
-></script>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 Kokoa Clone. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
